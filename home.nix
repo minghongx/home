@@ -35,6 +35,9 @@
     userName = "Minghong Xu";
     userEmail = "minghong@minghongxu.name";
     lfs.enable = true;
-    extraConfig.init.defaultBranch = "main";
+    extraConfig = {
+      init.defaultBranch = "main";
+      url."ssh://git@".pushInsteadOf = "https://";
+    };
   };
 }
